@@ -1,0 +1,33 @@
+"""
+____________________________________________________________________
+____________________________________________________________________
+
+Dear User,
+
+
+I'm using the following libraries in my final project via import, so
+please make sure they are all installed on your system:
+
+sys
+pytest
+random
+pyfiglet
+
+You can in case install the libraries via pip install command in your
+terminal window, following this command patterns:
+
+CMD: pip install pytest
+CMD: pip install pyfiglet
+
+The sys and random library should be preinstalled with your version
+of Python3, so theoretically you don't need to pip install those.
+
+Kindest Regards,
+
+
+Marc-Michel Münch
+
+____________________________________________________________________
+____________________________________________________________________
+
+"""
