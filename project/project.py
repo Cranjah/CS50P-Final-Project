@@ -57,20 +57,34 @@ def func1():
         try:
             x = random.randint(0, 9)
             y = random.randint(0, 9)
-            operator = ["+", "*"]
-            # The operators "-" and "/" led to errors because the input did not recognize negative integers correctly and some divisions led to ZeroDivisionError
+            operator = ["+", "-", "*", "/"]
             op = random.choice(operator)
 
             if op == "+":
                 result = x + y
             elif op == "-":
-                result = x - y
-            elif op == "/":
-                result = x / y
+                x = random.randint(1, 9)
+                y = random.randint(1, 9)
+                if x > y:
+                    result = x - y
+                elif y > x:
+                    x = random.randint(5, 9)
+                    y = random.randint(0, 4)
+                    result = x - y
+                elif x == y:
+                    result = x - y
             elif op == "*":
                 result = x * y
+            elif op == "/":
+                x = random.randint(1, 9)
+                y = random.randint(1, 9)
+                temp = int(x * y)
+                result = temp / y
 
-            solution = int(input(f"{x} {op} {y} = "))
+            if op == "+" or op == "-" or op == "*":
+                solution = int(input(f"{x} {op} {y} = "))
+            elif op == "/":
+                solution = int(input(f"{temp} {op} {y} = "))
 
             if result == solution:
                 score = score + 1
@@ -104,20 +118,34 @@ def func2():
         try:
             x = random.randint(0, 9)
             y = random.randint(0, 9)
-            operator = ["+", "*"]
-            # The operators "-" and "/" led to errors because the input did not recognize negative integers correctly and some divisions led to ZeroDivisionError
+            operator = ["+", "-", "*", "/"]
             op = random.choice(operator)
 
             if op == "+":
                 result = x + y
             elif op == "-":
-                result = x - y
-            elif op == "/":
-                result = x / y
+                x = random.randint(1, 9)
+                y = random.randint(1, 9)
+                if x > y:
+                    result = x - y
+                elif y > x:
+                    x = random.randint(5, 9)
+                    y = random.randint(0, 4)
+                    result = x - y
+                elif x == y:
+                    result = x - y
             elif op == "*":
                 result = x * y
+            elif op == "/":
+                x = random.randint(1, 9)
+                y = random.randint(1, 9)
+                temp = int(x * y)
+                result = temp / y
 
-            solution = int(input(f"{x} {op} {y} = "))
+            if op == "+" or op == "-" or op == "*":
+                solution = int(input(f"{x} {op} {y} = "))
+            elif op == "/":
+                solution = int(input(f"{temp} {op} {y} = "))
 
             if result == solution:
                 score = score + 1
