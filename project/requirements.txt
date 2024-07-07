@@ -35,6 +35,8 @@ of Python3, so theoretically you don't need to pip install those.
 Also make sure you download the public repository properly via GitHub
 and especially make sure you download the file "project.py"!
 
+Depending on your own operating system you first need to compile it;
+
 To start the program in your terminal, please open the folder, which
 contains the program, in your terminal and run one of these commands:
 
