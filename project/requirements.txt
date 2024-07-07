@@ -5,13 +5,19 @@ ____________________________________________________________________
 Dear User,
 
 
+First of all you must be sure, that Python3 is installed properly on
+your computer including the package management tool PyPi:
+
+Visit https://www.python.org/ for instructions and further downloads; 
+
 I'm using the following libraries in my final project via import, so
 please make sure they are all installed on your system:
 
 sys
-pytest
 random
 pyfiglet
+
+(and eventually pytest for testing the program - but there is no need)
 
 You can in case install the libraries via pip install command in your
 terminal window, following this command patterns:
@@ -19,8 +25,40 @@ terminal window, following this command patterns:
 CMD: pip install pytest
 CMD: pip install pyfiglet
 
+or for macOS:
+CMD: pip3 install pytest
+CMD: pip3 install pyfiglet
+
 The sys and random library should be preinstalled with your version
 of Python3, so theoretically you don't need to pip install those.
+
+Also make sure you download the public repository properly via GitHub
+and especially make sure you download the file "project.py"!
+
+To start the program in your terminal, please open the folder, which
+contains the program, in your terminal and run one of these commands:
+
+CMD: python project.py --math10 
+CMD: python project.py --math30
+CMD: python project.py --rps10
+CMD: python project.py --rps30
+CMD: python project.py --sentences10
+CMD: python project.py --sentences30
+
+or for macOS:
+CMD: python3 project.py --math10 
+CMD: python3 project.py --math30
+CMD: python3 project.py --rps10
+CMD: python3 project.py --rps30
+CMD: python3 project.py --sentences10
+CMD: python3 project.py --sentences30
+
+Each of these commands runs a different brainjogging game, so have fun!
+
+For each given task type in your answer directly into the terminal and
+hit the enter key on your keyboard to confirm your answer.
+
+After completing all tasks you will be given a final result and score.
 
 Kindest Regards,
 
