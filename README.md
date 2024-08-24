@@ -1,5 +1,5 @@
 ## BRAINJOGGING 10/30
-### Video Demo: [Click here to get forwarded to YouTube](https://youtu.be/beAnOuwHVKo?si=xuMmsgJK94PHVJB4)
+### Video Demo: [Click here to get forwarded to YouTube demonstration video](https://youtu.be/beAnOuwHVKo?si=xuMmsgJK94PHVJB4)
 
 ### Description of the Functionalities:
 
