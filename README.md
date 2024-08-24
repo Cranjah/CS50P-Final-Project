@@ -1,6 +1,8 @@
-   # BRAINJOGGING 10/30
-    #### Video Demo:  https://youtu.be/beAnOuwHVKo?si=xuMmsgJK94PHVJB4
-    #### Description:
+### BRAINJOGGING 10/30
+### Video Demo:  https://youtu.be/beAnOuwHVKo?si=xuMmsgJK94PHVJB4
+
+### Description:
+
     Inspired by the task "My Little Professor" of CS50P and Nintendo's casual video game "Dr. Kawashima's Brain Training", I created a terminal program, which I call "Brainjogging 10/30". For submission to CS50P and for now the terminal program written in Python3 contains three minigames and for each minigame two versions in length - what's the reason for it's naming numbers 10/30.
 
     The first length version for each minigame is ten tasks per game, the second length version is thirty tasks per game. You can start them by writing the game's name as sys.argv[1] - so as the second command line argument. The names of the games are "--math10", "--math30", "--rps10", "--rps30", "--sentences10" and "--sentences30". So let me further explain the minigames:
