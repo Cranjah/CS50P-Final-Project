@@ -1,7 +1,7 @@
 ## BRAINJOGGING 10/30
 ### Video Demo: [Click here to get forwarded to YouTube](https://youtu.be/beAnOuwHVKo?si=xuMmsgJK94PHVJB4)
 
-### Description:
+### Description of the Functionalities:
 
 Inspired by the task "My Little Professor" of CS50P and Nintendo's casual video game "Dr. Kawashima's Brain Training", I created a terminal program, which I call "Brainjogging 10/30". For submission to CS50P and for now the terminal program written in Python3 contains three minigames and for each minigame two versions in length - what's the reason for it's naming numbers 10/30.
 
