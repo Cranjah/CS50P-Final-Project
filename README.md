@@ -1,4 +1,4 @@
-## CS50P - BRAINJOGGING 10/30
+## CS50P BRAINJOGGING 10/30
 ### Video Demo: [Click here to get forwarded to YouTube video demonstration](https://youtu.be/beAnOuwHVKo?si=xuMmsgJK94PHVJB4)
 
 ### Description of the Functionalities:
