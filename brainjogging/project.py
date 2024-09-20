@@ -68,8 +68,8 @@ def func1():
                 if x > y:
                     result = x - y
                 elif y > x:
-                    x = random.randint(5, 9)
-                    y = random.randint(0, 4)
+                    x = random.randint(10, 19)
+                    y = random.randint(0, 9)
                     result = x - y
                 elif x == y:
                     result = x - y
@@ -133,8 +133,8 @@ def func2():
                 if x > y:
                     result = x - y
                 elif y > x:
-                    x = random.randint(5, 9)
-                    y = random.randint(0, 4)
+                    x = random.randint(10, 19)
+                    y = random.randint(0, 9)
                     result = x - y
                 elif x == y:
                     result = x - y
