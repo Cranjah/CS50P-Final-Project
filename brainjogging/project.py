@@ -43,7 +43,7 @@ def main():
         pyfiglet.FigletFont.getFonts()
 
         outcome = "You did exit the program!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print("\n" + fontrender)
         sys.exit(0)
 
@@ -82,9 +82,13 @@ def func1():
                 result = temp / y
 
             if op == "+" or op == "-" or op == "*":
-                solution = int(input(f"{x} {op} {y} = "))
+                solution = int(
+                    input(f"Please solve this little equation: {x} {op} {y} = ")
+                )
             elif op == "/":
-                solution = int(input(f"{temp} {op} {y} = "))
+                solution = int(
+                    input(f"Please solve this little equation: {temp} {op} {y} = ")
+                )
 
             if result == solution:
                 score = score + 1
@@ -98,13 +102,13 @@ def func1():
 
     if counter == 10 and score >= 7:
         outcome = f"Score {score} out of 10! You win!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
     elif counter == 10 and score < 7:
         outcome = f"Score {score} out of 10! You lose!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
@@ -143,9 +147,13 @@ def func2():
                 result = temp / y
 
             if op == "+" or op == "-" or op == "*":
-                solution = int(input(f"{x} {op} {y} = "))
+                solution = int(
+                    input(f"Please solve this little equation: {x} {op} {y} = ")
+                )
             elif op == "/":
-                solution = int(input(f"{temp} {op} {y} = "))
+                solution = int(
+                    input(f"Please solve this little equation: {temp} {op} {y} = ")
+                )
 
             if result == solution:
                 score = score + 1
@@ -159,13 +167,13 @@ def func2():
 
     if counter == 30 and score >= 21:
         outcome = f"Score {score} out of 30! You win!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
     elif counter == 30 and score < 21:
         outcome = f"Score {score} out of 30! You lose!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
@@ -182,7 +190,9 @@ def func3():
         choosen1 = random.choice(task)
         choosen2 = random.choice(gesture)
 
-        solution = input(f"{choosen1} {choosen2} - so what's your choice? ").lower().strip()
+        solution = (
+            input(f"{choosen1} {choosen2} - so what's your choice? ").lower().strip()
+        )
 
         if choosen1 == "Win on" and choosen2 == "rock" and solution == "paper":
             score = score + 1
@@ -215,13 +225,13 @@ def func3():
 
     if counter == 10 and score >= 7:
         outcome = f"Score {score} out of 10! You win!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
     elif counter == 10 and score < 7:
         outcome = f"Score {score} out of 10! You lose!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
@@ -238,7 +248,9 @@ def func4():
         choosen1 = random.choice(task)
         choosen2 = random.choice(gesture)
 
-        solution = input(f"{choosen1} {choosen2} - so what's your choice? ").lower().strip()
+        solution = (
+            input(f"{choosen1} {choosen2} - so what's your choice? ").lower().strip()
+        )
 
         if choosen1 == "Win on" and choosen2 == "rock" and solution == "paper":
             score = score + 1
@@ -271,13 +283,13 @@ def func4():
 
     if counter == 30 and score >= 21:
         outcome = f"Score {score} out of 30! You win!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
     elif counter == 30 and score < 21:
         outcome = f"Score {score} out of 30! You lose!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
@@ -290,11 +302,25 @@ def func5():
         try:
             counter += 1
             letter = chr(random.randint(ord("a"), ord("z")))
-            solution1, solution2, solution3, solution4, solution5 = input(f"Build a five words sentence where every word begins with: '{letter}' - so what's your sentence? ").lower().lstrip().rstrip().split(" ")
+            solution1, solution2, solution3, solution4, solution5 = (
+                input(
+                    f"Build a five words sentence where every word begins with: '{letter}' - so what's your sentence? "
+                )
+                .lower()
+                .lstrip()
+                .rstrip()
+                .split(" ")
+            )
 
-            if solution1.startswith(f"{letter}") == True and solution2.startswith(f"{letter}") == True and solution3.startswith(f"{letter}") == True and solution4.startswith(f"{letter}") == True and solution5.startswith(f"{letter}") == True:
+            if (
+                solution1.startswith(f"{letter}") == True
+                and solution2.startswith(f"{letter}") == True
+                and solution3.startswith(f"{letter}") == True
+                and solution4.startswith(f"{letter}") == True
+                and solution5.startswith(f"{letter}") == True
+            ):
                 score = score + 1
-            elif solution1.startswith(f"{letter}") == False and solution2.startswith(f"{letter}") == False and solution3.startswith(f"{letter}") == False and solution4.startswith(f"{letter}") == False and solution5.startswith(f"{letter}") == False:
+            else:
                 continue
 
         except ValueError:
@@ -304,13 +330,13 @@ def func5():
 
     if counter == 10 and score >= 7:
         outcome = f"Score {score} out of 10! You win!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
     elif counter == 10 and score < 7:
         outcome = f"Score {score} out of 10! You lose!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
@@ -324,11 +350,25 @@ def func6():
 
         try:
             letter = chr(random.randint(ord("a"), ord("z")))
-            solution1, solution2, solution3, solution4, solution5 = input(f"Build a five words sentence where every word begins with: '{letter}' - so what's your sentence? ").lower().lstrip().rstrip().split(" ")
+            solution1, solution2, solution3, solution4, solution5 = (
+                input(
+                    f"Build a five words sentence where every word begins with: '{letter}' - so what's your sentence? "
+                )
+                .lower()
+                .lstrip()
+                .rstrip()
+                .split(" ")
+            )
 
-            if solution1.startswith(f"{letter}") == True and solution2.startswith(f"{letter}") == True and solution3.startswith(f"{letter}") == True and solution4.startswith(f"{letter}") == True and solution5.startswith(f"{letter}") == True:
+            if (
+                solution1.startswith(f"{letter}") == True
+                and solution2.startswith(f"{letter}") == True
+                and solution3.startswith(f"{letter}") == True
+                and solution4.startswith(f"{letter}") == True
+                and solution5.startswith(f"{letter}") == True
+            ):
                 score = score + 1
-            elif solution1.startswith(f"{letter}") == False and solution2.startswith(f"{letter}") == False and solution3.startswith(f"{letter}") == False and solution4.startswith(f"{letter}") == False and solution5.startswith(f"{letter}") == False:
+            else:
                 continue
 
         except ValueError:
@@ -338,13 +378,13 @@ def func6():
 
     if counter == 30 and score >= 21:
         outcome = f"Score {score} out of 30! You win!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
     elif counter == 30 and score < 21:
         outcome = f"Score {score} out of 30! You lose!"
-        fontrender = pyfiglet.figlet_format(outcome, font = "slant")
+        fontrender = pyfiglet.figlet_format(outcome, font="slant")
         print(fontrender)
         sys.exit(0)
 
